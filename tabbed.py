@@ -11,15 +11,21 @@ frame2 = ttk.Frame(notebook)
 notebook.add(frame1, text='One')
 notebook.add(frame2, text='Two')
 
-ttk.Button(frame1, text='Click me').pack()
+ttk.Button(frame2, text='Click me').pack()
 frame3 = ttk.Frame(notebook)
 
 notebook.add(frame3, text='Three')
 
-notebook.tab(0, state = 'disabled')
+
+# disables the tab
+# notebook.tab(0, state = 'disabled')
 
 
-print(notebook.tab(1, 'text'))
+# entering and displaying multiple lines with the text widget
+
+text = Text(frame1, width=40, height=10)
+text.pack()
+
 
 if __name__ == '__main__':
     mainloop()
