@@ -26,6 +26,8 @@ notebook.add(frame3, text='Three')
 text = Text(frame1, width=40, height=10)
 text.pack()
 
+text2 = Text(frame2, width=40, height=10)
+text2.pack()
 
 if __name__ == '__main__':
     mainloop()
